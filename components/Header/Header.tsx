@@ -27,7 +27,7 @@ export const Header = () => {
 	}, [menuOpen]);
 
 	return (
-		<header className="container mt-6 p-4 lg:p-10 mx-auto">
+		<header className="container mt-6 px-4 lg:px-10 mx-auto">
 			<div className="flex items-center justify-between">
 				<div>
 					<Link href="/">

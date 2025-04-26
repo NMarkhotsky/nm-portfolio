@@ -1,7 +1,7 @@
 export default function ProjectsPage() {
 	return (
-		<div className="container mx-auto p-4 lg:p-10">
+		<section className="">
 			<h1>Projects Page</h1>
-		</div>
+		</section>
 	);
 }
