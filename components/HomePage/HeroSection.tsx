@@ -12,7 +12,7 @@ export const HeroSection = () => {
 					— <br /> Front-End Developer.
 				</h1>
 				<div className="relative p-1 rounded-full bg-[linear-gradient(180deg,_#ededed,_#888888)]">
-					<div className="relative w-75 h-75 lg:w-100 lg:h-100 rounded-full overflow-hidden bg-white">
+					<div className="relative w-75 h-75 lg:w-100 lg:h-100 rounded-full overflow-hidden bg-[#CFD4D5]">
 						<Image
 							src="/NM.jpeg"
 							alt="Mykola Markhotskyi"

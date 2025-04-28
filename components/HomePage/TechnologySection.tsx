@@ -99,7 +99,7 @@ export const TechnologySection = () => {
 						/>
 					</div>
 				</div> */}
-				<div className="flex flex-wrap items-center justify-center mt-5 lg:mt-10 gap-10">
+				<div className="flex flex-wrap items-center justify-center mt-5 lg:mt-10 gap-10 animate-pulse">
 					<div className="flex items-center justify-center flex-wrap gap-10 cursor-pointer">
 						<FaHtml5
 							size={50}
