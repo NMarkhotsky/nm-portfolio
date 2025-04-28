@@ -19,7 +19,7 @@ import { VscVscodeInsiders } from "react-icons/vsc";
 export const TechnologySection = () => {
 	return (
 		<>
-			<section className="mt-20 flex items-center justify-center flex-col lg:mt-30">
+			<section className="mt-30 flex items-center justify-center flex-col lg:mt-40">
 				<div className="flex flex-col items-center justify-center">
 					<h2 className="font-semibold text-center text-2xl lg:text-4xl">
 						👉 My Tech Stack
@@ -28,78 +28,8 @@ export const TechnologySection = () => {
 						✨ A collection of tools and frameworks i work.
 					</h3>
 				</div>
-				{/* 
-				<div className="flex flex-wrap items-center justify-center mt-5 lg:mt-10 gap-10">
-					<div className="flex items-center justify-center flex-wrap gap-10 cursor-pointer">
-						<FaHtml5
-							size={50}
-							className="hover:text-[#E44D27] transition-colors duration-200"
-						/>
-						<FaCss3
-							size={50}
-							className="hover:text-[#2576BC] transition-colors duration-200"
-						/>
-						<FaSass
-							size={50}
-							className="hover:text-[#CF6C9C] transition-colors duration-200"
-						/>
-						<FaLess
-							size={50}
-							className="hover:text-[#315485] transition-colors duration-200"
-						/>
-						<SiTailwindcss
-							size={50}
-							className="hover:text-[#00BCFF] transition-colors duration-200"
-						/>
-						<FaJs
-							size={50}
-							className="hover:text-[#FFCC31] transition-colors duration-200"
-						/>
-						<FaReact
-							size={50}
-							className="hover:text-[#20D9FE] transition-colors duration-200"
-						/>
-						<RiNextjsFill
-							size={50}
-							className="hover:text-gray-400 transition-colors duration-200"
-						/>
-					</div>
-					<div className="flex items-center justify-center flex-wrap gap-10 cursor-pointer">
-						<FaVuejs
-							size={50}
-							className="hover:text-[#48BA87] transition-colors duration-200"
-						/>
-						<FaNode
-							size={50}
-							className="hover:text-[#48BA87] transition-colors duration-200"
-						/>
-						<FaPhp
-							size={50}
-							className="hover:text-[#6785B8] transition-colors duration-200"
-						/>
-						<SiRedux
-							size={50}
-							className="hover:text-[#7A50BE] transition-colors duration-200"
-						/>
-						<FaGitAlt
-							size={50}
-							className="hover:text-[#F45431] transition-colors duration-200"
-						/>
-						<FaGithub
-							size={50}
-							className="hover:text-[#672F86] transition-colors duration-200"
-						/>
-						<FaBitbucket
-							size={50}
-							className="hover:text-[#2E88FF] transition-colors duration-200"
-						/>
-						<VscVscodeInsiders
-							size={50}
-							className="hover:text-[#2E88FF] transition-colors duration-200"
-						/>
-					</div>
-				</div> */}
-				<div className="flex flex-wrap items-center justify-center mt-5 lg:mt-10 gap-10 animate-pulse">
+
+				<div className="flex flex-wrap items-center justify-center mt-10 lg:mt-15 gap-10">
 					<div className="flex items-center justify-center flex-wrap gap-10 cursor-pointer">
 						<FaHtml5
 							size={50}
@@ -133,9 +63,6 @@ export const TechnologySection = () => {
 							size={50}
 							className="text-white hover:text-gray-300 transition-all duration-300 ease-in-out"
 						/>
-					</div>
-
-					<div className="flex items-center justify-center flex-wrap gap-10 cursor-pointer">
 						<FaVuejs
 							size={50}
 							className="text-[#48BA87] hover:text-[#5EE6B0] transition-all duration-300 ease-in-out"

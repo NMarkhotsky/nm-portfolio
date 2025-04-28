@@ -1,22 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Logo } from "../Icons/Icons";
-import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { RiCloseLargeFill, RiMenu2Fill } from "react-icons/ri";
+import { navLinks, navSocialLinks } from "@/utils/navigationLinks";
 
 export const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const pathname = usePathname();
-
-	const navLinks = [
-		{ href: "/", label: "Home" },
-		{ href: "/about", label: "About" },
-		{ href: "/projects", label: "Projects" },
-		{ href: "/contacts", label: "Contacts" },
-	];
 
 	useEffect(() => {
 		if (menuOpen) {
@@ -32,8 +25,7 @@ export const Header = () => {
 				<div>
 					<Link href="/">
 						<Logo
-							width={147}
-							height={57}
+							width={120}
 							className="hover:text-gray-400 transition-colors duration-200"
 						/>
 					</Link>
@@ -66,30 +58,18 @@ export const Header = () => {
 					</nav>
 
 					<ul className="flex items-center gap-4">
-						<li>
-							<Link
-								href="#"
-								className="hover:text-gray-400 transition-colors duration-200"
-							>
-								<FaGithub size={24} />
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="#"
-								className="hover:text-gray-400 transition-colors duration-200"
-							>
-								<FaLinkedin size={24} />
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="#"
-								className="hover:text-gray-400 transition-colors duration-200"
-							>
-								<FaTelegram size={24} />
-							</Link>
-						</li>
+						{navSocialLinks.map(({ href, Icon }) => (
+							<li key={href}>
+								<a
+									className="hover:text-gray-400 transition-colors duration-200"
+									href={href}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Icon size={24} />
+								</a>
+							</li>
+						))}
 					</ul>
 				</div>
 
@@ -144,21 +124,18 @@ export const Header = () => {
 							</nav>
 
 							<ul className="flex gap-4 mt-4">
-								<li>
-									<Link href="#">
-										<FaGithub size={24} color="black" />
-									</Link>
-								</li>
-								<li>
-									<Link href="#">
-										<FaLinkedin size={24} color="black" />
-									</Link>
-								</li>
-								<li>
-									<Link href="#">
-										<FaTelegram size={24} color="black" />
-									</Link>
-								</li>
+								{navSocialLinks.map(({ href, Icon }) => (
+									<li key={href}>
+										<a
+											className="text-black"
+											href={href}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<Icon size={24} color="black" />
+										</a>
+									</li>
+								))}
 							</ul>
 						</div>
 					</div>
