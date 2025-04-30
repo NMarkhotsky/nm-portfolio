@@ -9,7 +9,7 @@ export const HeroSection = () => {
 					<span className="bg-clip-text text-transparent bg-[linear-gradient(180deg,_#ededed,_#888888)] animate-pulse">
 						Mykola MARKHOTSKYI
 					</span>{" "}
-					— <br /> Front-End Developer.
+					— <br /> Full Stack Developer.
 				</h1>
 				<div className="relative p-1 rounded-full bg-[linear-gradient(180deg,_#ededed,_#888888)]">
 					<div className="relative w-75 h-75 lg:w-100 lg:h-100 rounded-full overflow-hidden bg-[#CFD4D5]">
