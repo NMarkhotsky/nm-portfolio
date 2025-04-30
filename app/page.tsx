@@ -1,11 +1,15 @@
-import { HeroSection } from "@/components/HomePage/HeroSection";
-import { TechnologySection } from "@/components/HomePage/TechnologySection";
+import {
+	HeroSection,
+	ProjectsSection,
+	TechnologySection,
+} from "@/components/HomePage/";
 
 export default function Home() {
 	return (
 		<>
 			<HeroSection />
 			<TechnologySection />
+			<ProjectsSection />
 		</>
 	);
 }

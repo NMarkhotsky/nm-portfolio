@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Logo } from "../Icons/Icons";
 import { RiCloseLargeFill, RiMenu2Fill } from "react-icons/ri";
-import { navLinks, navSocialLinks } from "@/utils/navigationLinks";
+import { navLinks, navSocialLinks } from "@/utils/";
 
 export const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);

@@ -22,10 +22,10 @@ export const TechnologySection = () => {
 			<section className="mt-30 flex items-center justify-center flex-col lg:mt-40">
 				<div className="flex flex-col items-center justify-center">
 					<h2 className="font-semibold text-center text-2xl lg:text-4xl">
-						👉 My Tech Stack
+						My Tech Stack
 					</h2>
 					<h3 className="font-medium text-center text-xl lg:text-2xl mt-3">
-						✨ A collection of tools and frameworks i work.
+						A collection of tools and frameworks i work.
 					</h3>
 				</div>
 

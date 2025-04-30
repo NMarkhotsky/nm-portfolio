@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "../Icons/Icons";
-import { navSocialLinks } from "@/utils/navigationLinks";
+import { navSocialLinks } from "@/utils/";
 import { HiOutlineMail, HiPhone } from "react-icons/hi";
 
 export const Footer = () => {
