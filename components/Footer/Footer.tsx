@@ -24,11 +24,15 @@ export const Footer = () => {
 					</a>
 				</div>
 				<ul className="flex items-center justify-center gap-4 md:items-start">
-					{navSocialLinks.map(({ href, Icon }) => (
-						<li key={href}>
+					{navSocialLinks.map(({ href, Icon, download }) => (
+						<li
+							key={href}
+							className={`${download ? "animate-bounce" : ""}`}
+						>
 							<a
 								className="hover:text-gray-400 transition-colors duration-200"
 								href={href}
+								// download={download}
 								target="_blank"
 								rel="noopener noreferrer"
 							>

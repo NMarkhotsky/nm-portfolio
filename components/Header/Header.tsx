@@ -58,11 +58,17 @@ export const Header = () => {
 					</nav>
 
 					<ul className="flex items-center gap-4">
-						{navSocialLinks.map(({ href, Icon }) => (
-							<li key={href}>
+						{navSocialLinks.map(({ href, Icon, download }) => (
+							<li
+								key={href}
+								className={`${
+									download ? "animate-bounce" : ""
+								}`}
+							>
 								<a
 									className="hover:text-gray-400 transition-colors duration-200"
 									href={href}
+									// download={download}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -124,18 +130,26 @@ export const Header = () => {
 							</nav>
 
 							<ul className="flex gap-4 mt-4">
-								{navSocialLinks.map(({ href, Icon }) => (
-									<li key={href}>
-										<a
-											className="text-black"
-											href={href}
-											target="_blank"
-											rel="noopener noreferrer"
+								{navSocialLinks.map(
+									({ href, Icon, download }) => (
+										<li
+											key={href}
+											className={`${
+												download ? "animate-bounce" : ""
+											}`}
 										>
-											<Icon size={24} color="black" />
-										</a>
-									</li>
-								))}
+											<a
+												className="text-black"
+												href={href}
+												// download={download}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<Icon size={24} color="black" />
+											</a>
+										</li>
+									)
+								)}
 							</ul>
 						</div>
 					</div>

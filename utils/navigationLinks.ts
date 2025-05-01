@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { TbFileCv } from "react-icons/tb";
 
 export const navLinks = [
 	{ href: "/", label: "Home" },
@@ -8,6 +9,11 @@ export const navLinks = [
 ];
 
 export const navSocialLinks = [
+	{
+		href: "/cv/Mykola_Markhotskyi.pdf",
+		Icon: TbFileCv,
+		download: true,
+	},
 	{
 		href: "https://github.com/NMarkhotsky",
 		Icon: FaGithub,
