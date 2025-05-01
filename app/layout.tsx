@@ -21,6 +21,9 @@ const firaMono = Fira_Mono({
 export const metadata: Metadata = {
 	title: "NM Portfolio",
 	description: "Mykola Markhotskyi Portfolio",
+	icons: {
+		icon: "/favicon.svg",
+	},
 };
 
 export default function RootLayout({
