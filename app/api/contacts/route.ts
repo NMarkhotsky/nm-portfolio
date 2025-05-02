@@ -25,7 +25,7 @@ export async function POST(req: Request) {
 		const { name, email, message } = parsed.data;
 
 		await transporter.sendMail({
-			from: `"${name}" <${email}>`,
+			from: process.env.MAIL_USER,
 			to: process.env.MAIL_TO,
 			subject: `✉️ Нове повідомлення з форми зворотного зв'язку - NM-Portfolio`,
 			text: `Ім’я: ${name}\nEmail: ${email}\n\nПовідомлення:\n${message}`,
