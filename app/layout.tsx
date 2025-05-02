@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 	icons: {
 		icon: "/favicon.svg",
 	},
+	openGraph: {
+		title: "NM Portfolio",
+		description: "Mykola Markhotskyi Portfolio",
+		url: "https://nmarkhotskyi.vercel.app/",
+		siteName: "Назва сайту",
+		images: [
+			{
+				url: "https://nmarkhotskyi.vercel.app/og-image.png",
+				width: 1200,
+				height: 630,
+				alt: "NM Portfolio",
+			},
+		],
+		locale: "uk_UA",
+		type: "website",
+	},
 };
 
 export default function RootLayout({
