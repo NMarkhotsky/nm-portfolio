@@ -3,6 +3,7 @@ import { Roboto, Fira_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const roboto = Roboto({
 	variable: "--font-roboto",
@@ -41,6 +42,7 @@ export default function RootLayout({
 					{children}
 				</main>
 				<Footer />
+				<Toaster />
 			</body>
 		</html>
 	);

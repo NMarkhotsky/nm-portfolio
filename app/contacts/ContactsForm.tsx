@@ -15,12 +15,14 @@ import {
 	FormLabel,
 	FormMessage,
 } from "@/components/ui/form";
+import { toast } from "sonner";
 import { contactsSchema } from "@/schemas/contactsSchema";
+import { CiCircleCheck, CiWarning } from "react-icons/ci";
 
 type FormData = z.infer<typeof contactsSchema>;
 
 export default function ContactsForm() {
-	const [status, setStatus] = useState<string | null>(null);
+	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	const form = useForm<FormData>({
 		resolver: zodResolver(contactsSchema),
@@ -32,7 +34,7 @@ export default function ContactsForm() {
 	});
 
 	const onSubmit = async (data: FormData) => {
-		setStatus("Sending...");
+		setIsSubmitting(true);
 
 		const res = await fetch("/api/contacts", {
 			method: "POST",
@@ -41,12 +43,29 @@ export default function ContactsForm() {
 		});
 
 		if (res.ok) {
-			setStatus("✅ Message sent!");
+			toast("Message sent successfully!", {
+				description:
+					"Thank you for reaching out. I’ll get back to you as soon as possible.",
+				icon: (
+					<div className="text-green-700 rounded-full">
+						<CiCircleCheck className="w-5 h-5" />
+					</div>
+				),
+			});
 			form.reset();
 		} else {
-			const json = await res.json();
-			setStatus(`❌ ${json.error || "Failed to send message"}`);
+			toast("Failed to send the message.", {
+				description:
+					"Please try again later or contact me directly via email.",
+				icon: (
+					<div className="text-red-700 rounded-full">
+						<CiWarning className="w-5 h-5" />
+					</div>
+				),
+			});
 		}
+
+		setIsSubmitting(false);
 	};
 
 	return (
@@ -107,10 +126,17 @@ export default function ContactsForm() {
 						)}
 					/>
 
-					<Button type="submit" className="w-full">
-						Send Message
+					<Button
+						type="submit"
+						className="w-full flex items-center justify-center gap-2"
+						disabled={isSubmitting}
+					>
+						{isSubmitting ? (
+							<span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+						) : (
+							"Send Message"
+						)}
 					</Button>
-					{status && <p className="text-sm text-center">{status}</p>}
 				</form>
 			</Form>
 		</div>
