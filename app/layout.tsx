@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 		title: "NM Portfolio",
 		description: "Mykola Markhotskyi Portfolio",
 		url: "https://nmarkhotskyi.vercel.app/",
-		siteName: "Назва сайту",
+		siteName: "NM Portfolio",
 		images: [
 			{
 				url: "https://nmarkhotskyi.vercel.app/og-image.png",
@@ -38,8 +38,6 @@ export const metadata: Metadata = {
 				alt: "NM Portfolio",
 			},
 		],
-		locale: "uk_UA",
-		type: "website",
 	},
 };
 
