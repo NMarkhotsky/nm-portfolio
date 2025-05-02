@@ -16,11 +16,11 @@ export const Footer = () => {
 						<span>+380937143691</span>
 					</a>
 					<a
-						href="mailto:markhotskyi@gmail.com"
+						href="mailto:marhotsky@gmail.com"
 						className="flex items-center justify-center gap-2.5 hover:text-gray-400 transition-colors duration-200"
 					>
 						<HiOutlineMail size={24} />
-						<span>markhotskyi@gmail.com</span>
+						<span>marhotsky@gmail.com</span>
 					</a>
 				</div>
 				<ul className="flex items-center justify-center gap-4 md:items-start">
