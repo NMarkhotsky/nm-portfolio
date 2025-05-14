@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import Script from "next/script";
 
 const roboto = Roboto({
 	variable: "--font-roboto",
@@ -51,6 +52,22 @@ export default function RootLayout({
 			<body
 				className={`${roboto.variable} ${firaMono.variable} antialiased`}
 			>
+				<Script
+					strategy="afterInteractive"
+					src="https://www.googletagmanager.com/gtag/js?id=G-E97P3MB76M"
+				/>
+				<Script
+					id="google-analytics"
+					strategy="afterInteractive"
+					dangerouslySetInnerHTML={{
+						__html: `
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+							gtag('config', 'G-E97P3MB76M');
+						`,
+					}}
+				/>
 				<Header />
 				<main className="container mx-auto px-4 lg:px-10">
 					{children}
