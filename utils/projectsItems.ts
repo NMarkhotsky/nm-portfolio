@@ -1,20 +1,5 @@
 export const projectsItems = [
 	{
-		title: "Alvex Consulting Group",
-		description:
-			"Multi-page Landing Website. Developed with React to ensure fast performance and scalable architecture. The project features a fully responsive design, optimized for all devices.",
-		image: "/projects/alvex-min.png",
-		techStack: [
-			"HTML",
-			"CSS",
-			"SASS",
-			"JavaScript",
-			"React",
-			"Responsive Design",
-		],
-		liveLink: "https://alvex.consulting/",
-	},
-	{
 		title: "Barber Shop",
 		description:
 			"Barber Shop Landing Page - This is a landing page for a barbershop, designed to attract clients and showcase the shop’s services. The page is built using pure HTML and styled with SASS, which ensures easy style management and allows for quick design adjustments.",
@@ -75,21 +60,6 @@ export const projectsItems = [
 		gitHubLink: "https://github.com/NMarkhotsky/snake-game",
 		gitHubLinkBackend:
 			"snake-game-backend-beta.vercel.apphttps://github.com/NMarkhotsky/snake-game-backend",
-	},
-	{
-		title: "Sparkl - Smm Agency",
-		description:
-			"A multi-page landing website built with React, offering fast performance and a scalable structure. Designed to be fully responsive and optimized for a experience on all devices.",
-		image: "/projects/sparkl-min.png",
-		techStack: [
-			"HTML",
-			"CSS",
-			"SASS",
-			"JavaScript",
-			"React",
-			"Responsive Design",
-		],
-		liveLink: "https://sparkl-kyiv.com.ua/",
 	},
 	{
 		title: "Ecosolution - Green Energy",
