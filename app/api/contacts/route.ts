@@ -6,7 +6,6 @@ export async function POST(req: Request) {
 	try {
 		const data = await req.json();
 		const parsed = contactsSchema.safeParse(data);
-		1;
 
 		if (!parsed.success) {
 			return NextResponse.json(
